@@ -1,0 +1,106 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|d:\\cdac\\c#\\apinetcorecrudoperation\\controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|solutionrelative:controllers\\studentapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|d:\\cdac\\c#\\apinetcorecrudoperation\\models\\cfnewcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|solutionrelative:models\\cfnewcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|d:\\cdac\\c#\\apinetcorecrudoperation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|d:\\cdac\\c#\\apinetcorecrudoperation\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|d:\\cdac\\c#\\apinetcorecrudoperation\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA7DCE5-16C6-4ECA-ADDF-901826851F71}|APINetCoreCrudOperation.csproj|solutionrelative:models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-25T09:37:42.516Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "Models\\Student.cs",
+              "ToolTip": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Models\\Student.cs",
+              "RelativeToolTip": "Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T09:47:43.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T09:42:50.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CfnewContext.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Models\\CfnewContext.cs",
+              "RelativeDocumentMoniker": "Models\\CfnewContext.cs",
+              "ToolTip": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Models\\CfnewContext.cs",
+              "RelativeToolTip": "Models\\CfnewContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T09:34:02.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StudentAPIController.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Controllers\\StudentAPIController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentAPIController.cs",
+              "ToolTip": "D:\\CDAC\\C#\\APINetCoreCrudOperation\\Controllers\\StudentAPIController.cs",
+              "RelativeToolTip": "Controllers\\StudentAPIController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAD4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-25T09:23:15.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

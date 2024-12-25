@@ -1,0 +1,291 @@
+﻿@* @model IEnumerable<CodeFirstApproach.Models.Student>
+
+@{
+	ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+	<a asp-action="Create">Create New</a>
+</p>
+
+
+@{
+
+	if (TempData["Insert_Success"] != null)
+	{
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Success</strong> @TempData["Insert_Success"]
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	}
+
+
+	if (TempData["Update_Success"] != null)
+	{
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Success</strong> @TempData["Update_Success"]
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	}
+
+	if (TempData["Delete_Success"] != null)
+	{
+		<div class="alert alert-success alert-dismissible fade show" role="alert">
+			<strong>Success</strong> @TempData["Delete_Success"]
+			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+		</div>
+	}
+
+
+}
+<table class="table">
+	<thead>
+		<tr>
+			<th>
+				@Html.DisplayNameFor(model => model.studentId)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.name)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.age)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.gender)
+			</th>
+			<th>
+				@Html.DisplayNameFor(model => model.Standard)
+			</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+
+				<td>
+					@Html.DisplayFor(modelItem => item.studentId)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.name)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.age)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.gender)
+				</td>
+				<td>
+					@Html.DisplayFor(modelItem => item.Standard)
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.studentId">Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.studentId">Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.studentId">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+ *@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					@model IEnumerable<CodeFirstApproach.Models.Student>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f7f9fc;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #4a90e2;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    .alert {
+        border-radius: 5px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        border-color: #c3e6cb;
+    }
+
+    a {
+        color: #4a90e2;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        a:hover {
+            text-decoration: underline;
+            color: #0066cc;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th, .table td {
+            text-align: left;
+            padding: 15px;
+        }
+
+        .table th {
+            background-color: #4a90e2;
+            color: #fff;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        .table tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .table tbody tr:hover {
+            background-color: #eaf3ff;
+        }
+
+        .table td {
+            border-bottom: 1px solid #ddd;
+            font-size: 1rem;
+        }
+
+        .table a {
+            margin: 0 5px;
+            color: #4a90e2;
+        }
+
+            .table a:hover {
+                color: #0066cc;
+            }
+
+    .btn-create {
+        display: inline-block;
+        background-color: #4a90e2;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        margin-bottom: 15px;
+    }
+
+        .btn-create:hover {
+            background-color: #0066cc;
+        }
+
+    .btn-close {
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        color: #333;
+        cursor: pointer;
+    }
+
+        .btn-close:hover {
+            color: #000;
+        }
+</style>
+
+<h1>Student Records</h1>
+
+<p>
+    <a class="btn-create" asp-action="Create"><i class="fas fa-plus"></i> Create New</a>
+</p>
+
+@{
+    if (TempData["Insert_Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success:</strong> @TempData["Insert_Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    if (TempData["Update_Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success:</strong> @TempData["Update_Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    if (TempData["Delete_Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong>Success:</strong> @TempData["Delete_Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.studentId)</th>
+            <th>@Html.DisplayNameFor(model => model.name)</th>
+            <th>@Html.DisplayNameFor(model => model.age)</th>
+            <th>@Html.DisplayNameFor(model => model.gender)</th>
+            <th>@Html.DisplayNameFor(model => model.Standard)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.studentId)</td>
+                <td>@Html.DisplayFor(modelItem => item.name)</td>
+                <td>@Html.DisplayFor(modelItem => item.age)</td>
+                <td>@Html.DisplayFor(modelItem => item.gender)</td>
+                <td>@Html.DisplayFor(modelItem => item.Standard)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.studentId"><i class="fas fa-edit"></i> Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.studentId"><i class="fas fa-info-circle"></i> Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.studentId"><i class="fas fa-trash"></i> Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

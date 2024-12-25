@@ -1,0 +1,14 @@
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.GeneratedMSBuildEditorConfig.editorconfig
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.AssemblyInfoInputs.cache
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.AssemblyInfo.cs
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.csproj.CoreCompileInputs.cache
+D:\CDAC\C#\ProjectA\bin\Debug\net8.0\ProjectA.exe
+D:\CDAC\C#\ProjectA\bin\Debug\net8.0\ProjectA.deps.json
+D:\CDAC\C#\ProjectA\bin\Debug\net8.0\ProjectA.runtimeconfig.json
+D:\CDAC\C#\ProjectA\bin\Debug\net8.0\ProjectA.dll
+D:\CDAC\C#\ProjectA\bin\Debug\net8.0\ProjectA.pdb
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.dll
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\refint\ProjectA.dll
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.pdb
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ProjectA.genruntimeconfig.cache
+D:\CDAC\C#\ProjectA\obj\Debug\net8.0\ref\ProjectA.dll

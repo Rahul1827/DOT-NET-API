@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CDAC\\C#\\Project1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3179C8FC-8FB8-4ABA-BF59-6D82DAB4F439}|Project1.csproj|d:\\cdac\\c#\\project1\\mainmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3179C8FC-8FB8-4ABA-BF59-6D82DAB4F439}|Project1.csproj|solutionrelative:mainmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3179C8FC-8FB8-4ABA-BF59-6D82DAB4F439}|Project1.csproj|d:\\cdac\\c#\\project1\\inputoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3179C8FC-8FB8-4ABA-BF59-6D82DAB4F439}|Project1.csproj|solutionrelative:inputoutput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMethod.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\Project1\\MainMethod.cs",
+              "RelativeDocumentMoniker": "MainMethod.cs",
+              "ToolTip": "D:\\CDAC\\C#\\Project1\\MainMethod.cs",
+              "RelativeToolTip": "MainMethod.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAACIAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:23:04.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputOutput.cs",
+              "DocumentMoniker": "D:\\CDAC\\C#\\Project1\\InputOutput.cs",
+              "RelativeDocumentMoniker": "InputOutput.cs",
+              "ToolTip": "D:\\CDAC\\C#\\Project1\\InputOutput.cs",
+              "RelativeToolTip": "InputOutput.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T16:22:41.571Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

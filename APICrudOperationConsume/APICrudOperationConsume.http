@@ -1,0 +1,6 @@
+@APICrudOperationConsume_HostAddress = http://localhost:5190
+
+GET {{APICrudOperationConsume_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact</h1>
+
+@{
+
+    foreach (var std in Model)
+    {
+        <h3>Student Id: @std.studentId</h3>
+        <h3>Student Name: @std.name</h3>
+        <h3>Student Gender: @std.gender</h3>
+        <h3>===================================</h3>
+    }
+}
+

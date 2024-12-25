@@ -1,0 +1,41 @@
+﻿@* @model Employee *@
+
+@model List<Employee>
+@{
+    ViewData["Title"] = "Home Page";
+    var employee = ViewData["myEmployee"] as List<Employee>;
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@* <h2>Employee Id:@Model.empId</h2>
+<h2>Employee Name:@Model.name</h2>
+<h2>Employee Designation: @Model.designation</h2>
+<h2>Employee Salary: @Model.salary</h2> *@
+
+
+
+
+
+@{
+
+
+    if (employee != null)
+    {
+        foreach (var emp in Model)
+        {
+            <h2>Employee Id: @emp.empId</h2>
+            <h2>Employee Name :@emp.name</h2>
+            <h2>Employee Designation :@emp.designation</h2>
+            <h2>Employee Salary :@emp.salary</h2>
+            <h2>=====================================================</h2>
+        }
+    }
+}
+
+
+
+

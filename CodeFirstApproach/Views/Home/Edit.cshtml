@@ -1,0 +1,209 @@
+﻿@* @model CodeFirstApproach.Models.Student
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Student</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="studentId" />
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="age" class="control-label"></label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="gender" class="control-label"></label>
+                <input asp-for="gender" class="form-control" />
+                <span asp-validation-for="gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Standard" class="control-label"></label>
+                <input asp-for="Standard" class="form-control" />
+                <span asp-validation-for="Standard" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+ *@
+
+
+                @model CodeFirstApproach.Models.Student
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<!-- Linking to FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<style>
+    /* General Page Styling */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f7fc;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        color: #4a90e2;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        color: #4a90e2;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    /* Form Container */
+    .edit-container {
+        max-width: 600px;
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 20px 30px;
+        margin: 0 auto;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border: 1px solid #ddd;
+    }
+
+    .form-group label {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        transition: border-color 0.3s ease-in-out;
+    }
+
+        .form-group input:focus {
+            border-color: #4a90e2;
+            outline: none;
+        }
+
+    .form-group .text-danger {
+        color: #e74c3c;
+        font-size: 0.85rem;
+    }
+
+    .btn-primary {
+        background-color: #4a90e2;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background-color: #357ab8;
+        }
+
+    .back-link {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+        font-size: 1rem;
+        color: #4a90e2;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out;
+    }
+
+        .back-link:hover {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+    /* Validation Summary Styling */
+    .text-danger {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+</style>
+
+<h1>Edit Student</h1>
+
+<div class="edit-container">
+    <h4>Student Information</h4>
+    <form asp-action="Edit">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <input type="hidden" asp-for="studentId" />
+
+        <div class="form-group">
+            <label asp-for="name"></label>
+            <input asp-for="name" class="form-control" />
+            <span asp-validation-for="name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="age"></label>
+            <input asp-for="age" class="form-control" />
+            <span asp-validation-for="age" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="gender"></label>
+            <input asp-for="gender" class="form-control" />
+            <span asp-validation-for="gender" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Standard"></label>
+            <input asp-for="Standard" class="form-control" />
+            <span asp-validation-for="Standard" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index" class="back-link"><i class="fas fa-arrow-left"></i> Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

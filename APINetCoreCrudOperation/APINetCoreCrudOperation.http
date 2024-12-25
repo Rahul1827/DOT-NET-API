@@ -1,0 +1,6 @@
+@APINetCoreCrudOperation_HostAddress = http://localhost:5113
+
+GET {{APINetCoreCrudOperation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,55 @@
+﻿@model APICrudConsume.Models.Student
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Create New Student</h1>
+
+<div class="card shadow-sm mx-auto" style="max-width: 600px;">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">Add Student Details</h4>
+    </div>
+    <div class="card-body">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+            <div class="mb-3">
+                <label asp-for="studentName" class="form-label">Student Name</label>
+                <input asp-for="studentName" class="form-control" />
+                <span asp-validation-for="studentName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="age" class="form-label">Age</label>
+                <input asp-for="age" class="form-control" />
+                <span asp-validation-for="age" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="studentGender" class="form-label">Gender</label>
+                <input asp-for="studentGender" class="form-control" />
+                <span asp-validation-for="studentGender" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="standard" class="form-label">Standard</label>
+                <input asp-for="standard" class="form-control" />
+                <span asp-validation-for="standard" class="text-danger"></span>
+            </div>
+
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Create</button>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer text-center">
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
